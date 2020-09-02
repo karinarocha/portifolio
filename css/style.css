@@ -1,0 +1,261 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+    text-decoration: none;
+    
+}
+
+/*CARD AREA*/
+.card{
+  padding-left: 0;
+  left: 0;
+  overflow: hidden;
+  background: #FFF;
+  border: transparent;
+
+}
+
+.card-img img{
+  width: 100%;
+  height: 80%;
+  margin-left: 0;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 81%, 0 100%, 0 0);
+}
+
+.perfil-img img{
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin-top: -150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 10px solid #FFF;
+  transition-duration: 0.4s;
+  transition-property: transform; 
+}
+
+.perfil-img img:hover{
+  transform: scale(1.1);
+}
+    
+.card .button{
+  padding: 12px 10px;
+  background: #A4D050;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  text-align: center;
+  margin:auto;
+  text-decoration: none;
+}
+      
+.conteudo-card h4{
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  line-height: .6;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+}
+
+.conteudo-card h3{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  color: #69CF38;
+  opacity: .6;
+  font-weight: bold;
+  font-size: 20px;
+}
+  
+.conteudo-card p{
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px 0px 20px;
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 30px;
+}
+  
+.midia-sociais{
+    text-align: center;
+}
+  
+.midia-sociais a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0 14px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+  
+.midia-sociais a:hover{
+  transform: scale(1.5);
+}
+
+.card .button:hover{
+  background: transparent;
+  color: #69CF38;
+  border: 2px solid #69CF38;
+}
+
+/*FIM CARD AREA*/
+
+/*SOBRE-MIM AREA*/
+.main-conteudo{
+  margin: 100px 20px 0 20px;
+}
+
+.intro p{
+  font-size: 16px;
+  text-align: justify;
+  font-size: 15px;
+  color: #999;
+  width: 100%;
+}
+
+.idioma-nivel{
+  color: #6ab04c;
+  align-items: center;
+}
+
+.idioma-nivel label{
+  color: #999;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/*TESTEMUNHOS AREA*/
+
+.testemunhos-area{
+  text-align: center;  
+}
+
+.testemunhos-area p{
+  text-align: justify;
+  font-size: 15px;
+}
+
+.testemunho-pessoas{
+  padding: 15px;
+  border-radius: 10px;
+  }
+  
+.testemunho-pessoas img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nome{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.classificação{
+  color: #6ab04c;
+  margin-bottom: 10px;
+}
+
+.border{
+  width: 95px;
+  height:8px;
+  background: #6ab04c;
+   margin: 0;
+}
+
+.testemunho-botao{
+  background-color: #6ab04c !important;
+  color: #FFF !important;
+}
+
+/*FIM TESTEMUNHOS AREA*/
+
+/*CONTATO AREA*/
+
+input[type=submit] {
+  background-color: #A4D050;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #69CF38;
+}
+
+address{
+  padding: 10px auto;
+  font-size: 18px;
+  color: #666;
+  text-align: justify;
+}
+
+footer{
+  background-color:#6ab04c;
+  padding:0px;
+  margin:0px;
+  width: 100%;
+  left: 0;
+}
+
+footer p{
+  margin:0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white !important
+}
+
+/*FIM CONTATO AREA*/
+
+/*FIM SOBRE-MIM AREA*/
+
+/*HELP D: NAO SEI FAZER RESPONSIVIDADE*/
+.div1{
+  margin: 0;
+  padding: 0;
+}
+
+.div2{
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 600px){
+  .sidebar {
+   top: 0;
+   left: 0;
+   padding: 0;
+   margin: 0;
+   height: 100%;
+   overflow: hidden;
+   background: #FFF;
+   box-shadow: 0px 1px 10px 1px #666;
+   position: fixed;
+  }
+
+  .sidebar .card-img img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 81%, 0 100%, 0 0);
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    margin-left: 33%;
+    padding: 0px 0px 72px 50px;
+  } 
+}
